@@ -20,4 +20,6 @@ class Solution:
         
         leftHeight = self.maxDepth(root.left)
         rightHeight = self.maxDepth(root.right)
-        return max(leftHeight, rightHeight) + 1
+        return max(leftHeight, rightHeight) + 1 
+    
+    # the plus one accounts for the current node itself!
